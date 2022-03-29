@@ -1,5 +1,6 @@
 package com.example.toastandsnackbar
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -14,7 +15,9 @@ class snackbars : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.yesBtn.setOnClickListener{
-            Toast.makeText(this, "Hello Human!!", Toast.LENGTH_LONG).show()
+            val intents = Intent(this,yay::class.java)
+            startActivity(intents)
+//            Toast.makeText(this, "Hello Human!!", Toast.LENGTH_LONG).show()
         }
         binding.noBtn.setOnClickListener{
             Toast.makeText(this, "Bip boppp bippp! Reset", Toast.LENGTH_LONG).show()
