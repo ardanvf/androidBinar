@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.toastandsnackbar.databinding.ActivityMainBinding
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.snackbar.Snackbar
 
 private lateinit var binding: ActivityMainBinding
@@ -18,12 +19,10 @@ class MainActivity : AppCompatActivity() {
             if (binding.editText    .text.isNullOrEmpty()){
                 Toast.makeText(this, "Masukkan Nama Anda", Toast.LENGTH_LONG).show()
             } else {
-                val snack = Snackbar.make(it, "Contoh Snekbar", Snackbar.LENGTH_INDEFINITE)
-                snack.setAction("Tombol1") {
-                    Toast.makeText(this, "Toast dari Action Snackbar", Toast.LENGTH_LONG).show()
-                }.show()
+                val dialog = BottomSheetDialog(this)
+                dialog.setContentView(this.layoutInflater.inflate(R.layout.activity_snackbars,null))
+                dialog.show()
             }
         }
-
     }
 }
