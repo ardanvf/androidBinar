@@ -16,12 +16,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener{
-            if (binding.editText    .text.isNullOrEmpty()){
+            if (binding.editText.text.isNullOrEmpty()){
                 Toast.makeText(this, "Masukkan Nama Anda", Toast.LENGTH_LONG).show()
             } else {
                 val dialog = BottomSheetDialog(this)
                 dialog.setContentView(this.layoutInflater.inflate(R.layout.activity_snackbars,null))
+                binding.button.setOnClickListener{
+
+                }
                 dialog.show()
+
             }
         }
     }

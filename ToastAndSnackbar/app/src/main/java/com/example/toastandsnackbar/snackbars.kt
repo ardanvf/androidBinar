@@ -14,9 +14,11 @@ class snackbars : AppCompatActivity() {
         binding = ActivitySnackbarsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val first = first()
+
         binding.yesBtn.setOnClickListener{
-            val intents = Intent(this,yay::class.java)
-            startActivity(intents)
+//            val intents = Intent(this,yay::class.java)
+//            startActivity(intents)
 //            Toast.makeText(this, "Hello Human!!", Toast.LENGTH_LONG).show()
         }
         binding.noBtn.setOnClickListener{
