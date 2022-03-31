@@ -30,6 +30,6 @@ class PhoneAdapter(val listPhone: ArrayList<Phone>): RecyclerView.Adapter<PhoneA
         holder.itemView.textName.text = listPhone[position]._name
         holder.itemView.textYear.text= listPhone[position]._year
         holder.itemView.textBrand.text = listPhone[position]._brand
-//        holder.itemView.imagePhone.setImageDrawable = listPhone[position]._image
+        listPhone[position]._image?.let { holder.itemView.imagePhone.setImageResource(it) }
     }
 }
