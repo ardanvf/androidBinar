@@ -13,14 +13,27 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"></androidx.recyclerview.widget.RecyclerView>
 
+
     <Button
         android:id="@+id/btnDiff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Diff"
+        android:text="Diff Update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnShowDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Default Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDiff"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />

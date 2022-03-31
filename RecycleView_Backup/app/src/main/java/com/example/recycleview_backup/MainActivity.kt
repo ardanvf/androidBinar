@@ -27,13 +27,17 @@ class MainActivity : AppCompatActivity() {
         binding.recycleView.isNestedScrollingEnabled = false
 
         val adapter = PhoneAdapter(listPhones)
+        val adapterDiff = PhoneAdapter(listPhones)
         recycleView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL , false)
         recycleView.adapter = adapter
 
-        val adapterDiff = PhoneAdapter(listPhones)
-        binding.recycleView.adapter = adapterDiff
-        adapterDiff.submitData(listPhones)
+        //Nampilin data default yaitu listPhone( kode baris 19-25)
+        binding.btnShowDiff.setOnClickListener{
+            binding.recycleView.adapter = adapterDiff
+            adapterDiff.submitData(listPhones)
+        }
 
+        //Mengubah data default. baris 43 untuk mengubah datanya menggunakan urutan array
         binding.btnDiff.setOnClickListener{
             val list: MutableList<Phone> = listPhones.toMutableList()
             list[3] = Phone(2, "ROG Phone", "9999", "Asus", R.drawable.rog)
