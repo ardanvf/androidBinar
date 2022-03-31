@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.learningrecycleview.adapter.PhoneAdapter
 import com.example.learningrecycleview.data.Phone
+import com.example.learningrecycleview.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.card_layout.*
 
@@ -15,9 +16,12 @@ class MainActivity : AppCompatActivity() {
 //    private var layoutManager: RecyclerView.LayoutManager? = null
 //    private var adapter: RecyclerView.Adapter<RecyclerView> = null
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val listPhones = arrayListOf(
             Phone(1, "Realme", "2010", "Oppo", R.drawable.ic_launcher_background),
