@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recycleview_backup.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnDiff.setOnClickListener{
             val list: MutableList<Phone> = listPhones.toMutableList()
-            list[0] = Phone(2, "ROG Phone", "9999", "Asus", R.drawable.rog)
+            list[3] = Phone(2, "ROG Phone", "9999", "Asus", R.drawable.rog)
             adapterDiff.differ.submitList(list)
         }
     }

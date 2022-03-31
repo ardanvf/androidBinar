@@ -33,9 +33,9 @@ class PhoneAdapter(val listPhone: ArrayList<Phone>): RecyclerView.Adapter<PhoneA
         val data = differ.currentList[position]
 
         holder.itemView.textName.text = data._name
-        holder.itemView.textYear.text = data._brand
+        holder.itemView.textYear.text = data._year
         holder.itemView.textBrand.text = data._brand
-        listPhone[position]._image?.let { holder.itemView.imagePhone.setImageResource(it) }
+        data._image?.let { holder.itemView.imagePhone.setImageResource(it) }
     }
 
     override fun getItemCount(): Int = differ.currentList.size
