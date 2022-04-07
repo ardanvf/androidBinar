@@ -13,7 +13,7 @@
         android:layout_marginTop="172dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Name"
+        android:hint="Judul"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,19 +26,20 @@
         android:layout_marginTop="14dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:hint="Email"
+        android:hint="Isi Catatan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/updateTextName" />
 
     <EditText
+        android:visibility="gone"
         android:id="@+id/updateTextAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="number"
-        android:hint="Age"
+        android:hint="Tanggal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/updateTextEmail" />
@@ -56,16 +57,18 @@
         app:layout_constraintTop_toBottomOf="@+id/updateTextAge"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnDelete"
         android:layout_width="50dp"
         android:layout_height="47dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="40dp"
+        android:background="@drawable/ic_delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btnUpdate"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"></Button>
+        app:layout_constraintVertical_bias="0.504"></ImageButton>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

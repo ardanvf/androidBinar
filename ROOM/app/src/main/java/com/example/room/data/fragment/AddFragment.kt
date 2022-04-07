@@ -37,9 +37,10 @@ class AddFragment : Fragment() {
     private fun insertDataToDatabase() {
         val name = editTextName.text.toString()
         val email = editTextEmail.text.toString()
-        val age = editTextAge.text
+//        val age = editTextAge.text
+        val age = 99
 
-        if (inputCheck(name,email, age)){
+        if (inputCheck(name,email, age.toString())){
             val user = User(0, name, email, Integer.parseInt(age.toString()))
             mUserViewModel.addUser(user)
             Toast.makeText(requireContext(), "Data Berhasil Ditambahkan", Toast.LENGTH_SHORT).show()
@@ -49,7 +50,7 @@ class AddFragment : Fragment() {
         }
     }
 
-    private fun inputCheck(name: String, email: String, age: Editable): Boolean{
+    private fun inputCheck(name: String, email: String, age: String): Boolean{
         return !(TextUtils.isEmpty(name) && TextUtils.isEmpty(email) && age.isEmpty())
     }
     

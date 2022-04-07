@@ -15,6 +15,7 @@ import androidx.room.Update
 import com.example.room.R
 import com.example.room.data.User
 import com.example.room.data.UserViewModel
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.custom_row.view.*
 import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.view.*
@@ -51,9 +52,11 @@ class UpdateFragment : Fragment() {
     private fun updateItem(){
         val name = updateTextName.text.toString()
         val email = updateTextEmail.text.toString()
-        val age = Integer.parseInt(updateTextAge.text.toString())
+//        val age = Integer.parseInt(updateTextAge.text.toString())
+        val age = 99
 
-        if (inputCheck(name,email, updateTextAge.text.toString())){
+//        if (inputCheck(name,email, updateTextAge.text.toString())){
+        if (inputCheck(name,email, age.toString())){
             val updateUser = User(args.currentUser.id, name, email, age)
             mUserViewModel.updateUser(updateUser)
             Toast.makeText(requireContext(), "Data Berhasil diPerbarui", Toast.LENGTH_SHORT).show()
@@ -67,28 +70,19 @@ class UpdateFragment : Fragment() {
         return !(TextUtils.isEmpty(name) && TextUtils.isEmpty(email) && age.isEmpty())
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.delete_menu, menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId == R.menu.delete_menu){
-            deleteUser()
-        }
-        return super.onOptionsItemSelected(item)
-    }
-
     private fun deleteUser() {
-        val builder = AlertDialog.Builder(requireContext())
-        builder.setPositiveButton("Yes"){_,_ ->
+
+        val builder = MaterialAlertDialogBuilder(requireContext())
+        builder.setTitle("Hapus Data ${args.currentUser.name}?")
+        builder.setMessage("data ${args.currentUser.name} akan dihapus, Yakin?")
+        builder.setPositiveButton("Ya"){_,_ ->
             mUserViewModel.deleteUser(args.currentUser)
-            Toast.makeText(requireContext(), "Data Berhasil Dihapus", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_updateFragment_to_listFragment)
+            Toast.makeText(requireContext(), "Berhasil Dihapus", Toast.LENGTH_SHORT).show()
         }
-        builder.setNegativeButton("No"){_,_ ->
-            builder.setTitle("Delete ${args.currentUser.name}?")
-            builder.setMessage("data ${args.currentUser.name} akan dihapus, Yakin?")
-            builder.create().show()
-        }
+        builder.setNegativeButton("No") { _, _ ->
+            builder.create()
+        }.show()
     }
 
 }
