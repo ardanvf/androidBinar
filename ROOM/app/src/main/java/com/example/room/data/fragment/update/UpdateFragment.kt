@@ -1,6 +1,7 @@
 package com.example.room.data.fragment.update
 
 import android.app.AlertDialog
+import android.content.DialogInterface
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.*
@@ -44,7 +45,6 @@ class UpdateFragment : Fragment() {
         }
 
         setHasOptionsMenu(true)
-        
         return view
     }
 
@@ -65,6 +65,17 @@ class UpdateFragment : Fragment() {
 
     private fun inputCheck(name: String, email: String, age: String): Boolean{
         return !(TextUtils.isEmpty(name) && TextUtils.isEmpty(email) && age.isEmpty())
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.delete_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.menu.delete_menu){
+            deleteUser()
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun deleteUser() {
