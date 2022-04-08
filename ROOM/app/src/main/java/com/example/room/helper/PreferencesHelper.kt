@@ -1,4 +1,4 @@
-package com.example.loginwithsharedpreferences.helper
+package com.example.room.helper
 
 import android.content.Context
 import android.content.SharedPreferences

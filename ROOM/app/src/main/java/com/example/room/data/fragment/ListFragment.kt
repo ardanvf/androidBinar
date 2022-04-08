@@ -46,15 +46,16 @@ class ListFragment : Fragment() {
         })
 
         view.floatingActionButton.setOnClickListener{
-            val customLayout = inflater.inflate(R.layout.fragment_add, null)
-            val mBuilder = MaterialAlertDialogBuilder(requireContext())
-                .setView(customLayout)
-                .setTitle("Add Data Form")
-                .show()
-            mBuilder
+//            val customLayout = inflater.inflate(R.layout.fragment_add, null)
+//            val mBuilder = MaterialAlertDialogBuilder(requireContext())
+//                .setView(customLayout)
+//                .setTitle("Add Data Form")
+//                .show()
+//            mBuilder
 
-            //findNavController().navigate(R.id.action_listFragment_to_addFragment)
+            findNavController().navigate(R.id.action_listFragment_to_addFragment)
         }
         return view
     }
+
 }

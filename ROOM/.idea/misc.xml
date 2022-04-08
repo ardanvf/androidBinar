@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Administrator/Documents/androidBinar/ROOM/app/src/main/res/drawable/ic_edit.xml" value="0.163" />
+        <entry key="..\:/Users/Administrator/Documents/androidBinar/ROOM/app/src/main/res/layout/activity_login.xml" value="0.30739632321504917" />
         <entry key="..\:/Users/Administrator/Documents/androidBinar/ROOM/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Administrator/Documents/androidBinar/ROOM/app/src/main/res/layout/activity_register.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/Administrator/Documents/androidBinar/ROOM/app/src/main/res/layout/custom_row.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Administrator/Documents/androidBinar/ROOM/app/src/main/res/layout/fragment_add.xml" value="0.33" />
         <entry key="..\:/Users/Administrator/Documents/androidBinar/ROOM/app/src/main/res/layout/fragment_list.xml" value="0.358695652173913" />
