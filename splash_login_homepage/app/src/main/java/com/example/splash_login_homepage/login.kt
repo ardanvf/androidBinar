@@ -31,11 +31,6 @@ class login : AppCompatActivity() {
             finish()
         }
 
-        val inptName = binding.editTextTextPersonName.text.toString()
-        val inptPassword = binding.editTextTextPassword.text.toString()
-
-
-
         binding.btnLogin.setOnClickListener{
             val name: String = binding.editTextTextPersonName.text.toString()
             val password: String = binding.editTextTextPassword.text.toString()

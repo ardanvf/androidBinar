@@ -19,6 +19,7 @@ import kotlinx.android.synthetic.main.fragment_list.view.*
 import androidx.navigation.fragment.navArgs
 import com.example.room.data.fragment.ListFragment
 import com.example.room.data.fragment.update.UpdateFragmentArgs
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
 class ListFragment : Fragment() {
@@ -45,7 +46,14 @@ class ListFragment : Fragment() {
         })
 
         view.floatingActionButton.setOnClickListener{
-            findNavController().navigate(R.id.action_listFragment_to_addFragment)
+            val customLayout = inflater.inflate(R.layout.fragment_add, null)
+            val mBuilder = MaterialAlertDialogBuilder(requireContext())
+                .setView(customLayout)
+                .setTitle("Add Data Form")
+                .show()
+            mBuilder
+
+            //findNavController().navigate(R.id.action_listFragment_to_addFragment)
         }
         return view
     }
