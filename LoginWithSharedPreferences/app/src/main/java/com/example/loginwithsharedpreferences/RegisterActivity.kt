@@ -26,7 +26,7 @@ class RegisterActivity : AppCompatActivity() {
 
     btnRegister.setOnClickListener{
         if (registTextName.text.isNotEmpty() && registTextUsername.text.isNotEmpty() && registTextPassword.text.isNotEmpty()){
-            saveSession(registTextName.text.toString(), registTextName.text.toString(), registTextPassword.text.toString(), pref = false )
+            saveSession(registTextName.text.toString(), registTextUsername.text.toString(), registTextPassword.text.toString(), pref = false )
             showMessage("Anda Berhasil Daftar")
             moveIntent()
             } else {
@@ -35,7 +35,7 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    private fun saveSession(name: String,username: String, password: String, pref: Boolean ){
+    private fun saveSession(name: String, username: String, password: String, pref: Boolean ){
         sharedpref.put( Constant.PREF_IS_NAME, name)
         sharedpref.put( Constant.PREF_IS_USERNAME, username)
         sharedpref.put( Constant.PREF_IS_PASSWORD, password)

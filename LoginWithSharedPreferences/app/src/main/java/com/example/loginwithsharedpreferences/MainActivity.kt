@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener{
             if (editTextUsername.text.toString() == username && editTextPassword.text.toString() == password){
+                Session(true)
                 moveIntent()
             } else{
                 showMessage("Username atau Password anda Salah")
@@ -71,9 +72,7 @@ class MainActivity : AppCompatActivity() {
         finish()
     }
 
-    private fun saveSession(username: String, password: String, pref: Boolean ){
-        sharedpref.put( Constant.PREF_IS_USERNAME, username)
-        sharedpref.put( Constant.PREF_IS_PASSWORD, password)
+    private fun Session(pref: Boolean ){
         sharedpref.putBoolean( Constant.PREF_IS_LOGIN, pref)
     }
 
