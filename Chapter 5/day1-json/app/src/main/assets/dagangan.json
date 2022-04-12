@@ -1,0 +1,33 @@
+{
+  "status": "OK",
+  "message": "Success",
+  "data": {
+    "amount": 180000,
+    "qty": 3,
+    "paid": 200000,
+    "change": 20000,
+    "detail": [
+      {
+        "name": "Book",
+        "price": 100000,
+        "code": "BK120901920",
+        "discount": 0,
+        "qty": 1,
+        "new": true
+      },
+      {
+        "name" : "Candle",
+        "price" : 150000,
+        "code" : "CD120103929",
+        "discount" : 70000,
+        "qty" : 2,
+        "new" : true
+      }
+    ]
+  },
+  "receipt": {
+    "store": "Uni.oq",
+    "address": "Bandung",
+    "add_note": "All You Need"
+  }
+}
