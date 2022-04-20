@@ -15,6 +15,7 @@ interface ApiService {
     @GET("admin/car")
     fun getAllCar(): Call<List<GetAllCarResponseItem>>
 
+
     @GET("admin/car/{id}")
     fun getCarById(@Path("id") carId:Int): Call<GetAllCarResponseItem>
 

@@ -52,7 +52,7 @@ class RegisterActivity : AppCompatActivity() {
                 response: Response<PostRegisterResponse>
             ) {
                 val code = response.code()
-                if (code == 200) {
+                if (code == 201) {
                     Toast.makeText(
                         this@RegisterActivity, "Register Berhasil",
                         Toast.LENGTH_SHORT

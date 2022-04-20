@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.retrofit.data.GetAllCarResponseItem
 import com.example.retrofit.databinding.ActivityMainBinding
@@ -21,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //View Model
-
+        supportActionBar?.hide()
         fetchAllData()
         setupView()
     }
@@ -35,59 +37,44 @@ class MainActivity : AppCompatActivity() {
     private fun fetchAllData() {
         ApiClient.instance.getAllCar().enqueue(object :
             retrofit2.Callback<List<GetAllCarResponseItem>> {
-                override fun onResponse(
-                    call: Call<List<GetAllCarResponseItem>>,
-                    response: Response<List<GetAllCarResponseItem>>
-                ) {
-                    val body = response.body()
-                    val code = response.code()
-                    if (code ==200){
-                        showList(body)
-                        binding.progressBar1.visibility = View.GONE
-                    } else {
-                        binding.progressBar1.visibility = View.GONE
-                    }
-                }
-
-                override fun onFailure(call: Call<List<GetAllCarResponseItem>>, t: Throwable){
+            override fun onResponse(
+                call: Call<List<GetAllCarResponseItem>>,
+                response: Response<List<GetAllCarResponseItem>>
+            ) {
+                val body = response.body()
+                val code = response.code()
+                if (code == 200) {
+                    showList(body)
+                    binding.progressBar1.visibility = View.GONE
+                } else {
                     binding.progressBar1.visibility = View.GONE
                 }
-            })
+            }
+
+            override fun onFailure(call: Call<List<GetAllCarResponseItem>>, t: Throwable) {
+                binding.progressBar1.visibility = View.GONE
+            }
+        })
     }
 
-    private fun showList(data: List<GetAllCarResponseItem>? ){
+    private fun showList(data: List<GetAllCarResponseItem>?) {
         val adapter = MainAdapter(object : MainAdapter.OnClickListener {
-            override fun onClickItem(data: GetAllCarResponseItem){
-                val intent = Intent(this@MainActivity, DetailActivity::class.java)
-                intent.putExtra("id", "${data.id}")
-                startActivity(intent)
-                Toast.makeText(this@MainActivity, "Item Clicker ${data.id}", Toast.LENGTH_SHORT).show()
+            override fun onClickItem(data: GetAllCarResponseItem) {
+//                val intent = Intent(this@MainActivity, DetailActivity::class.java)
+//                intent.putExtra("id", "${data.id}")
+//                intent.putExtra("name", "${data.name}")
+//                intent.putExtra("category", "${data.category}")
+//                intent.putExtra("price", "${data.price}")
+//                startActivity(intent)
+//                Toast.makeText(this@MainActivity, "Item Clicker ${data.name}", Toast.LENGTH_SHORT)
+//                    .show()
             }
         })
         adapter.submitData(data)
-        binding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        binding.recyclerView.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding.recyclerView.adapter = adapter
     }
 
-    private fun getCarDetail(id: Int) {
-        ApiClient.instance.getCarById(id)
-            .enqueue(object : retrofit2.Callback<GetAllCarResponseItem> {
-                override fun onResponse(
-                    call: Call<GetAllCarResponseItem>,
-                    response: Response<GetAllCarResponseItem>
-                ) {
-                    val body = response.body()
-                    val code = response.code()
-                    if(code == 200)  {
-                        binding.progressBar1.visibility = View.GONE
-                    } else {
-                        binding.progressBar1.visibility = View.GONE
-                    }
-                }
-
-                override fun onFailure(call: Call<GetAllCarResponseItem>, t: Throwable) {
-                    binding.progressBar1.visibility = View.GONE
-                }
-            })
-    }
 }
+
