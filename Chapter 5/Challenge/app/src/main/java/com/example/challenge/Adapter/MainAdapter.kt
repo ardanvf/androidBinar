@@ -1,61 +1,42 @@
 package com.example.challenge.Adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import com.example.challenge.Api.Result
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.challenge.Api.MovieList
+import com.bumptech.glide.Glide
+import com.example.challenge.Api.Movie
+import com.example.challenge.R
 import com.example.challenge.databinding.ItemContentawBinding
 
-class MainAdapter(private val onItemClick: OnClickListener):
-    RecyclerView.Adapter<MainAdapter.ViewHolder>(){
+class MainAdapter(
+    private val movies : List<Movie>
+) : RecyclerView.Adapter<MainAdapter.MovieViewHolder>(){
 
-    private val diffCallback = object : DiffUtil.ItemCallback<Result>(){
-        override fun areItemsTheSame(
-            oldItem: Result,
-            newItem: Result
-        ): Boolean = oldItem.id == newItem.id
-
-        override fun areContentsTheSame(
-            oldItem: Result,
-            newItem: Result
-        ): Boolean = oldItem.hashCode() == newItem.hashCode()
-    }
-
-    private val differ = AsyncListDiffer(this, diffCallback)
-
-    fun submitData(value: List<Result>?) = differ.submitList(value)
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainAdapter.ViewHolder {
-        val inflater = LayoutInflater.from(parent.context)
-        return ViewHolder(ItemContentawBinding.inflate(inflater, parent, false))
-    }
-
-    override fun onBindViewHolder(holder: MainAdapter.ViewHolder, position: Int) {
-        val data = differ.currentList[position]
-        data.let { holder.bind(data) }
-    }
-
-    override fun getItemCount(): Int = differ.currentList.size
-
-    inner class ViewHolder(private val binding: ItemContentawBinding) :
-        RecyclerView.ViewHolder(binding.root){
-        fun bind(data: Result){
-            binding.apply {
-                textTittle.text = data.title
-                textVote.text = data.voteAverage.toString()
-                textOverview.text = data.overview
-                root.setOnClickListener {
-                    onItemClick.onClickItem(data)
-                }
-            }
+    class MovieViewHolder(private val binding:ItemContentawBinding)
+        :RecyclerView.ViewHolder(binding.root){
+        private val IMAGE_BASE = "https://image.tmdb.org/t/p/w500/"
+        fun bindMovie(movie : Movie){
+            binding.textTittle.text = movie.title
+            binding.textVote.text = movie.release
+            binding.textOverview.text = movie.overview
+            Glide.with(itemView)
+                .load(IMAGE_BASE + movie.poster)
+                .into(binding.imageView)
         }
     }
 
-    interface OnClickListener{
-        fun onClickItem(data: Result)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainAdapter.MovieViewHolder {
+        val inflater = LayoutInflater.from(parent.context)
+
+        return MovieViewHolder(ItemContentawBinding.inflate(inflater, parent, false))
     }
+
+    override fun getItemCount(): Int = movies.size
+
+    override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
+        holder.bindMovie(movies.get(position))
+    }
+
 }

@@ -26,11 +26,14 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inpUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username" />
@@ -42,11 +45,14 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEditUsername">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inpFullname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nama Lengkap" />
@@ -58,11 +64,14 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEditFullname">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inpDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tanggal Lahir" />
@@ -74,11 +83,14 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEditDate">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inpAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Alamat" />

@@ -1,61 +1,78 @@
 package com.example.challenge
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import  androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.challenge.Adapter.MainAdapter
-import com.example.challenge.Api.MovieList
-import com.example.challenge.Network.ApiClient
+import com.example.challenge.Api.Movie
+import com.example.challenge.Api.MovieResponse
+import com.example.challenge.Helper.Constant
+import com.example.challenge.Helper.PreferencesHelper
+import com.example.challenge.Network.ApiInterface
+import com.example.challenge.Network.ApiService
+import com.example.challenge.ViewModel.MainActivityViewModel
 import com.example.challenge.databinding.ActivityMainBinding
 import retrofit2.Call
+import retrofit2.Callback
 import retrofit2.Response
-import com.example.challenge.Api.Result
-
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
+    lateinit var sharedpref: PreferencesHelper
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
+
+        sharedpref = PreferencesHelper(this)
+
         supportActionBar?.hide()
-        fetchAllData()
+        binding.textView2.text = sharedpref.getString(Constant.PREF_USERNAME)
+        binding.recycleView.layoutManager = LinearLayoutManager(this)
+        binding.recycleView.setHasFixedSize(true)
+
+
+        viewModel.getMovieData {
+            binding.recycleView.adapter = MainAdapter(it)
+        }
+
+//        getMovieData { movies: List<Movie> ->
+//            binding.recycleView.adapter = MainAdapter(movies)
+//        }
+
+        binding.imageButton.setOnClickListener {
+            startActivity(Intent(this, UpdateActivity::class.java))
+        }
+
     }
 
-
-    private fun fetchAllData() {
-        ApiClient.instance.getMovie().enqueue(object :
-            retrofit2.Callback<List<Result>>{
-            override fun onResponse(
-                call: Call<List<Result>>,
-                response: Response<List<Result>>
-            ) {
-                val body = response.body()
-                val code = response.code()
-                if (code == 200) {
-                    showList(body)
-                    binding.progressBar.visibility = View.GONE
-                } else {
-                    binding.progressBar.visibility = View.GONE
-                }
-            }
-
-            override fun onFailure(call: Call<List<Result>>, t: Throwable) {
-                binding.progressBar.visibility = View.GONE
-            }
-        })
+    override fun onStart(){
+        super.onStart()
+        if(sharedpref.getBool(Constant.PREF_IS_LOGIN) == false){
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }
     }
 
-    private fun showList(data: List<Result>?) {
-        val adapter = MainAdapter(object : MainAdapter.OnClickListener {
-            override fun onClickItem(data: Result) {
-            }
-        })
-        adapter.submitData(data)
-        binding.recycleView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        binding.recycleView.adapter = adapter
-    }
+//    private fun getMovieData(callback: (List<Movie>) -> Unit){
+//        val apiService = ApiService.getInstance().create(ApiInterface::class.java)
+//        apiService.getMovie().enqueue(object : Callback<MovieResponse> {
+//            override fun onFailure(call: Call<MovieResponse>, t: Throwable) {
+//
+//            }
+//
+//            override fun onResponse(call: Call<MovieResponse>, response: Response<MovieResponse>) {
+//                return callback(response.body()!!.movies)
+//            }
+//
+//        })
+//    }
+
+
 
 }

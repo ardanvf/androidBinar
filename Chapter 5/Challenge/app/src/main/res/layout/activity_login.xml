@@ -49,6 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inpEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -70,6 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inpPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -99,6 +101,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
