@@ -38,7 +38,20 @@ class MainActivity : AppCompatActivity() {
 
 
         viewModel.getMovieData {
-            binding.recycleView.adapter = MainAdapter(it)
+            binding.recycleView.adapter = MainAdapter(it, object : MainAdapter.OnClickListener{
+                override fun onClickItem(movie: Movie) {
+                    val intentS = Intent(this@MainActivity, DetailActivity::class.java)
+                    val bundle = Bundle()
+                    bundle.putString("tittle", movie.title)
+                    bundle.putString("release", movie.release)
+                    bundle.putString("overview", movie.overview)
+                    bundle.putString("poster", movie.poster)
+                    bundle.putString("vote", movie.vote)
+                    bundle.putString("language", movie.language)
+                    intentS.putExtras(bundle)
+                    startActivity(intentS)
+                }
+            })
         }
 
 //        getMovieData { movies: List<Movie> ->
@@ -63,16 +76,11 @@ class MainActivity : AppCompatActivity() {
 //        val apiService = ApiService.getInstance().create(ApiInterface::class.java)
 //        apiService.getMovie().enqueue(object : Callback<MovieResponse> {
 //            override fun onFailure(call: Call<MovieResponse>, t: Throwable) {
-//
 //            }
-//
 //            override fun onResponse(call: Call<MovieResponse>, response: Response<MovieResponse>) {
 //                return callback(response.body()!!.movies)
 //            }
-//
 //        })
 //    }
-
-
 
 }

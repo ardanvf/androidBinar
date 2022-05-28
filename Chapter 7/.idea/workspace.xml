@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a0c9902-64cb-4f4a-95ce-9bce48402824" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Chapter 5/Challenge/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/androidTest/java/com/example/backgroundprocessingthread/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/java/com/example/backgroundprocessingthread/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/java/com/example/backgroundprocessingthread/MainActivity2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/java/com/example/backgroundprocessingthread/ui/gallery/GalleryFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/java/com/example/backgroundprocessingthread/ui/gallery/GalleryViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/java/com/example/backgroundprocessingthread/ui/home/HomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/java/com/example/backgroundprocessingthread/ui/home/HomeViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/java/com/example/backgroundprocessingthread/ui/slideshow/SlideshowFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/java/com/example/backgroundprocessingthread/ui/slideshow/SlideshowViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/drawable/ic_menu_camera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/drawable/ic_menu_gallery.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/drawable/ic_menu_slideshow.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/drawable/side_nav_bar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/layout/app_bar_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/layout/fragment_gallery.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/layout/fragment_slideshow.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/layout/nav_header_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/menu/main_activity2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/values-land/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/values-w1240dp/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/values-w600dp/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/app/src/test/java/com/example/backgroundprocessingthread/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/backgroundProcessingThread/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/courotine/app/src/main/java/com/example/courotine/Testing.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/courotine/app/src/test/java/com/example/courotine/MainActivityTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/androidTest/java/com/example/file_processing/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/java/com/example/file_processing/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/app/src/test/java/com/example/file_processing/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/file_processing/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/foreground_service/app/src/main/java/com/example/foreground_service/foreground_service/ForegroundService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chapter 6/foreground_service/app/src/main/res/drawable/ic_notification.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DepedencyInjection/app/src/main/java/com/example/depedencyinjection/App.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DepedencyInjection/app/src/main/java/com/example/depedencyinjection/Koin/KoinModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DepedencyInjection/app/src/main/java/com/example/depedencyinjection/Koin/KoinRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DepedencyInjection/app/src/main/java/com/example/depedencyinjection/Koin/KoinService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DepedencyInjection/app/src/main/java/com/example/depedencyinjection/Koin/KoinViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/app/src/main/java/com/example/testing/RegistrationUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/app/src/test/java/com/example/testing/MainActivityTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/app/src/test/java/com/example/testing/RegistrationUtilTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/java/com/example/challenge/Adapter/MainAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/java/com/example/challenge/Adapter/MainAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/java/com/example/challenge/Api/Movie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/java/com/example/challenge/Api/Movie.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/java/com/example/challenge/DetailActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/java/com/example/challenge/DetailActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/java/com/example/challenge/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/java/com/example/challenge/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/java/com/example/challenge/Network/ApiInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/java/com/example/challenge/Network/ApiInterface.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/res/layout/item_contentaw.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter 5/Challenge/app/src/main/res/layout/item_contentaw.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="29cFlMYutIJyhwGWpI2CpBB7sGs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Chapter 6/Challenge" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a0c9902-64cb-4f4a-95ce-9bce48402824" name="Default Changelist" comment="" />
+      <created>1653404616450</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653404616450</updated>
+    </task>
+    <servers />
+  </component>
+</project>
