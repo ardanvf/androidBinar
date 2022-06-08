@@ -17,5 +17,4 @@ data class User(
     val address: String,
     val password: String,
     val date: String
-
 ) : Parcelable

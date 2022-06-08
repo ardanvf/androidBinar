@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Foreground_service" >
+
         <service
             android:name=".foreground_service.ForegroundService"
             android:enabled="true"
