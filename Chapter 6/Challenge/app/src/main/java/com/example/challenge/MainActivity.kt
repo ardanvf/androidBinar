@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
 
         CoroutineScope(Dispatchers.Default).launch {
-            delay(5000)
+            delay(3000)
             viewModel.getMovieData {
                 binding.progressBar.visibility = View.GONE
                 binding.recycleView.adapter = MainAdapter(it, object : MainAdapter.OnClickListener {
