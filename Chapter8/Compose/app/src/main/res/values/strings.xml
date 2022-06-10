@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Compose</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_update_profil">UpdateProfilActivity</string>
+    <string name="title_activity_updt_profil">UpdtProfilActivity</string>
 </resources>
