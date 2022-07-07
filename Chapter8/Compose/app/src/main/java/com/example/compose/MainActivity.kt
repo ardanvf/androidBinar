@@ -1,5 +1,6 @@
 package com.example.compose
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -41,6 +42,7 @@ import androidx.core.content.ContextCompat.startActivity
 
 class MainActivity : ComponentActivity() {
 
+    @SuppressLint("NewApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent{
@@ -70,7 +72,6 @@ fun Greeting(name: String) {
 @Composable
 fun TextRegister(register: String, clickHere: String){
     val mContext = LocalContext.current
-    var enabled by remember{ mutableStateOf(true)}
 
     ClickableText(text = AnnotatedString("$register"), onClick = {
         mContext.startActivity(Intent(mContext, RegisterActivity::class.java))

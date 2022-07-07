@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="login_input_background">#252A4E</color>
+    <color name="colorSplash">#0d253f</color>
+    <color name="purple_400">#FF8000FF</color>
+    <color name="pink">#FFFF1F8A</color>
+    <color name="pink_400">#F3BB3B78</color>
+    <color name="blue_grey_200">#B0BBC5</color>
+    <color name="almost_black">#FF21222E</color>
+    <color name="almost_black_200">#FF303243</color>
+    <color name="dark_teal">#FF5D8D8D</color>
+    <color name="colorPrimary">#4e277a</color>
+    <color name="colorPrimaryTransparent">#b84e277a</color>
+    <color name="colorPrimaryDark">#1f004d</color>
+    <color name="colorAccent">#fab800</color>
+    <color name="colorAccentDark">#c28800</color>
+    <color name="black_transparent">#ca000000</color>
+    <color name="black_toolbar_transparent">#80000000</color>
+    <color name="grey_200">#eeeeee</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="grey_400">#bdbdbd</color>
+    <color name="cyan_800_dark">#005662</color>
+</resources>

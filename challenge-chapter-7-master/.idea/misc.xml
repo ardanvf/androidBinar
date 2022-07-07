@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Hussain/AndroidStudioProjects/ChallengeChapter5/app/src/main/res/drawable/ic_email.xml" value="0.129" />
+        <entry key="..\:/Users/Hussain/AndroidStudioProjects/ChallengeChapter5/app/src/main/res/drawable/ic_password.xml" value="0.129" />
+        <entry key="..\:/Users/Hussain/AndroidStudioProjects/ChallengeChapter5/app/src/main/res/drawable/ic_user.xml" value="0.129" />
+        <entry key="..\:/Users/Hussain/AndroidStudioProjects/ChallengeChapter5/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Hussain/AndroidStudioProjects/ChallengeChapter5/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Users/Hussain/AndroidStudioProjects/ChallengeChapter5/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Users/Hussain/AndroidStudioProjects/ChallengeChapter5/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Hussain/AndroidStudioProjects/ChallengeChapter5/app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="..\:/Users/Hussain/AndroidStudioProjects/ChallengeChapter5/app/src/main/res/layout/fragment_update_profile.xml" value="0.25" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.196" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/drawable/custom_login.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/drawable/custom_text.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/drawable/ic_email.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/layout/fragment_home.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/layout/fragment_profile.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/layout/fragment_update_profile.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.196" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/mipmap-anydpi-v26/tmdb.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/ChallengeChapter5-TheMovieDB-master/app/src/main/res/mipmap-hdpi/ic_launcher_round.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/drawable/custom_login.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/drawable/custom_text.xml" value="0.196" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/drawable/ic_back_white.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/drawable/ic_email.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/drawable/ic_loading.xml" value="0.196" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/drawable/ic_password.xml" value="0.196" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/drawable/ic_refresh_back.xml" value="0.196" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/drawable/ic_star.xml" value="0.2985" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/drawable/ic_user.xml" value="0.196" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/layout/activity_detail_movie.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/layout/activity_main.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/layout/fragment_login.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/layout/fragment_profile.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/layout/fragment_update_profile.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/layout/ic_loading.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/layout/item_movie.xml" value="0.5" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/layout/items_movie.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/layout/movieinclude.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/KSMWDSZ/Desktop/challenge5-main/app/src/main/res/mipmap-hdpi/ic_launcher_round.xml" value="0.196" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge5/app/src/main/res/layout/activity_detail_movie.xml" value="0.2015625" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_login.xml" value="0.14221014492753623" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_profile.xml" value="0.2015625" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_register.xml" value="0.18819655521783182" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge5/app/src/main/res/layout/fragment_update_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge_5/app/src/main/res/layout/activity_detail_movie.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge_5/app/src/main/res/layout/fragment_login.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge_5/app/src/main/res/layout/fragment_profile.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge_5/app/src/main/res/layout/fragment_register.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge_5/app/src/main/res/layout/fragment_update_profile.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/Challenge_5/app/src/main/res/layout/items_movie.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/drawable/border.xml" value="0.209" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/drawable/text_border.xml" value="0.209" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/layout/activity_detail_movie.xml" value="0.2015625" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/layout/fragment_profile.xml" value="0.2015625" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/layout/fragment_update_profile.xml" value="0.2015625" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/layout/items_movie.xml" value="0.2015625" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2925" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge5-main/app/src/main/res/mipmap-anydpi-v26/tmdb.xml" value="0.2925" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge6/app/src/main/res/drawable/border.xml" value="0.2925" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge6/app/src/main/res/drawable/circle_border.xml" value="0.209" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge6/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.209" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge6/app/src/main/res/drawable/ic_user.xml" value="0.2925" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge6/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Rwnd/AndroidStudioProjects/challenge6/app/src/main/res/layout/fragment_update_profile.xml" value="0.358695652173913" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
