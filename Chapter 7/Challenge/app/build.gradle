@@ -15,7 +15,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.challenge"
-        minSdk 24
+        minSdk 28
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -28,7 +28,31 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug{
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            buildConfigField "String", "TYPE", '"DEBUG MODE"'
+        }
+        beta{
+            applicationIdSuffix ".beta"
+            versionNameSuffix "-beta"
+            buildConfigField "String", "TYPE", '"BETA"'
+        }
     }
+
+    flavorDimensions "dimensionOne"
+
+    productFlavors{
+        light{
+            applicationId "com.light.android"
+            applicationIdSuffix ".light"
+        }
+        dark{
+            applicationId "com.dark.android"
+            applicationIdSuffix ".dark"
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -86,4 +110,10 @@ dependencies {
 
     //viewmodel+livedata
     implementation "androidx.activity:activity-ktx:1.4.0"
+
+    testImplementation 'junit:junit:4.13'
+    testImplementation "io.mockk:mockk:1.10.0"
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }

@@ -49,19 +49,4 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
         }
     }
-
-//    private fun insertDataToDatabase() {
-//        val username = binding.registUsername.editText.toString()
-//        val email = binding.registEmail.editText.toString()
-//        val password = binding.registPassword.editText.toString()
-//
-//        if(username.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty()){
-//            val user = User(0,username,email,"Kosong", password, "Kosong")
-//            mUserViewModel.addUser(user)
-//            Toast.makeText(this, "Berhasil Daftar Akun Anda", Toast.LENGTH_SHORT).show()
-//            startActivity(Intent(this, LoginActivity::class.java))
-//        } else {
-//            Toast.makeText(this, "Gagal Daftar Akun Anda", Toast.LENGTH_SHORT).show()
-//        }
-//    }
 }
